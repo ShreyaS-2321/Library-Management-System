@@ -44,7 +44,7 @@ bash
      Class.forName("com.mysql.cj.jdbc.Driver");
      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bibliohive", "root", "yourpassword");
 
-4. Go to LandingPage.jsp and Run As Run on Server. (make sure MySQL is running)
+5. Go to LandingPage.jsp and Run As Run on Server. (make sure MySQL is running)
 
 ## 🤝 Contributing
 Pull requests are welcome! Feel free to improve UI, add features, or optimize the backend.
