@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+/*resets*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,sans-serif;
+}
+
+
+body{
+    background: linear-gradient(90deg, rgba(40,1,61,1) 0%, rgba(132,9,199,1) 95%);
+}
+
+h1{
+    font-family: Montserrat;
+    font-size:3rem;
+}
+
+h2{
+    font-family: Montserrat;
+    font-size:2rem;
+}
+
+h3{
+    font-family: Montserrat;
+    font-size:1.5rem;
+}
+
+h4{
+    font-family: Montserrat;
+    color: white;
+}
+
+p{
+    font-family:'Roboto',sans-serif;
+    font-size:1.25rem;
+    color:white;
+    line-height:1.8rem;
+}
+
+.orange{
+    color:rgba(255,117,4,1);
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.primary-button{
+    background-color: white;
+    cursor: pointer;
+    color: black !important;
+    border-radius: 9px;
+    font-weight:300px;
+    padding:12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: all 0.28s ease-in;
+
+}
+
+.primary-button:hover{
+    cursor: pointer;
+    background-color: rgba(255,117,4,1);
+    color: white !important;
+}
+
+
+.secondary-button{
+    cursor: pointer;
+    border:0.5px solid white;
+    border-radius:6px;
+    font-weight:700px;
+    color:white !important;
+    padding:12px 24px;
+}
+
+
+/*Utility classes*/
+.small-bold-text{
+    font-size:1rem;
+    font-weight:700;
+}
+
+.container{
+    max-width:1180px;
+    margin-inline:auto;
+    padding-inline:var(--padding-inline-section);
+    overflow:hidden;
+}
+
+
+.hover-link{
+    color:white;
+    transition:0.2s ease-out;
+
+}
+
+.hover-link:hover{
+    color:rgba(255,117,4,1);
+}
+
+
+/*Top banner*/
+.top-banner{
+    background-color: rgba(255,117,4,1);
+}
+.banner-text{
+    font-family: Montserrat;
+    font-size:1.5rem;
+    font-weight: 500;
+    color:white;
+    padding:15px 30px;
+    text-align:center;
+}
+
+/*Nav*/
+.main-nav{
+    display: flex;
+    align-items: center;
+    margin-top:30px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+
+.logo{
+    font-family: "Imperial Script", cursive;
+    font-size:4rem;
+    color:white;
+}
+
+
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap:40px;
+}
+
+/*Header*/
+
+header{
+    padding: 50px 0;
+}
+
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+
+.header-left{
+    color: white;
+    max-width:40vw;
+}
+
+.header-left h1{
+margin-bottom: 20px;
+}
+
+.get-started-button{
+    margin-top:20px;
+}
+.header-right img{
+    width:400px;
+}
+
+/*About section*/
+.about-section{
+margin-top:100px;
+padding-left: 80px;
+padding-right: 80px;
+}
+
+.about-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap:80px;
+}
+
+.about-header{
+    text-align: center;
+    color: white;
+}
+
+.about-image{
+    height: 300px;
+    width: 300px;
+}
+
+.about-para{
+    text-align: justify;
+}
+
+/*Features section*/
+.features-section{
+    margin-top:100px;
+    margin-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.features-header{
+    text-align:center;
+    color: white;
+}
+
+.features-header-text{
+    margin-bottom:60px;
+}
+
+.features-h3{
+    color: white;
+}
+
+.features-area {
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap:40px;
+    margin-top:20px;
+}
+
+.features-card{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    gap:30px;
+    max-width:30%;
+    text-align:center;
+}
+
+.features-card img{
+    width:200px;
+}
+
+
+/*CTA section*/
+.contact-section {
+    padding: 80px 60px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.contact-header {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.contact-form input{
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.contact-form textarea{
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+/*Footer*/
+
+footer {
+    padding-block:80px;
+}
+.link-column{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.company-logo{
+    font-family: "Imperial Script", cursive;
+    font-size:4rem;
+    color:white;
+}
+
+.footer-container{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+/*Subfooter*/
+.subfooter{
+    background-color: rgba(255,117,4,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+.subfooter p{
+    font-size: medium;
+}

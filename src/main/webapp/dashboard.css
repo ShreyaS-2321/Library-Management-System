@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family:Inter,sans-serif;
+}
+
+body{
+	background: linear-gradient(90deg, rgba(40,1,61,1) 0%, rgba(132,9,199,1) 95%);
+}
+
+#gradient{
+	color:transparent;
+	background: linear-gradient(90deg, rgba(254,134,35,1) 0%, rgba(255,117,4,1) 0%, rgba(132,9,199,1) 81%);
+	background-clip: text;
+}
+
+
+.container{
+	padding: 0px 6%;
+    width: 100%;
+    height: 340px;
+    background-color:white;
+}
+
+.nav{
+	 display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.logo{
+	cursor:pointer;
+	padding-top:30px;
+}
+
+.nav-right{
+	padding-top:30px;
+	display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+
+.logout{
+	padding:12px 20px;
+	background-color:red;
+    border-radius: 4px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+
+.profile-image{
+	height:40px;
+	width:40px;
+	border-radius:50px;
+	object-fit:cover;
+	cursor:pointer;
+}
+
+.punch-line{
+	padding-top:80px;
+	text-align:center;
+}
+
+.punch-line h2{
+	font-size:36px;
+	font-family:Montserrat, sans-serif;
+}
+
+input{
+	padding:20px;
+	width:100%;
+	height:30px;
+	margin-top:40px;
+	border-radius:4px;
+	border:3px solid black;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+
+.filters {
+	margin-top:40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-dropdown {
+	cursor:pointer;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Set 5 cards per row */
+    gap: 35px;
+    margin-top: 60px;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.image-part {
+    height: 160px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.book-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.issue-book {
+    background-color: rgba(255,117,4,1);
+    color: #fff;
+    border: none;
+    padding: 12px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button{
+	padding:10px;
+}

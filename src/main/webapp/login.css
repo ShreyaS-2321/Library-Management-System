@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family:Inter,sans-serif;
+}
+
+body{
+	background: linear-gradient(90deg, rgba(40,1,61,1) 0%, rgba(132,9,199,1) 95%);
+}
+
+.container{
+	width:55%;
+	height:550px;
+	background-color:#fff;
+	margin:80px auto;
+	border-radius:16px;
+	box-shadow: 0px 0px 36px rgba(0,0,0,0.1);
+	padding:25px 50px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:50px;
+}
+
+.container form, .container .background{
+	width:50%;
+	height:100%;
+}
+
+.background{
+	background:url('bookread2.png');
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+form h2{
+	margin-top:30px;
+	position:relative;
+	color:transparent;
+	background:linear-gradient(90deg, rgba(255,117,4,1) 0%, rgba(236,152,48,1) 75%);
+	background-clip:text;
+	font-size:32px;
+	font-family:"Montserrat", sans-serif;
+	font-weight:500px;
+}
+
+
+.form-field{
+	margin:20px 0px;
+	width:80%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:10px;
+}
+
+.form-field input{
+	width:95%;
+	padding:8px;
+	border-radius:4px;
+	border:1px solid black;
+}
+
+.button-field input[type="submit"]{
+	padding:15px 30px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 4px;
+    color: rgb(1, 10, 109);
+    border: 2px solid rgba(255,117,4,1);
+    transition: all ease-in 0.28s;
+    font-size:16px;
+}
+
+.button-field input[type="submit"]:hover{
+	box-shadow: inset 150px 0px 0px rgba(255,117,4,1);
+    cursor: pointer;
+    color: white;
+}
+
+.button-field p{
+	margin-top:20px;
+}
+
+.button-field{
+	margin-top:30px;
+}
