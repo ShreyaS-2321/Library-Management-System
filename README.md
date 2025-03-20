@@ -41,8 +41,8 @@ bash
 3. Configure the database connection in Java:
    
      Replace yourpassword with your actual MySQL password:
-     Class.forName("com.mysql.cj.jdbc.Driver");
-     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bibliohive", "root", "yourpassword");
+     - Class.forName("com.mysql.cj.jdbc.Driver");
+     - Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bibliohive", "root", "yourpassword");
 
 5. Go to LandingPage.jsp and Run As Run on Server. (make sure MySQL is running)
 
